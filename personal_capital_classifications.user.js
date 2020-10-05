@@ -1,7 +1,9 @@
 // ==UserScript==
 // @name         Personal Capital Classifications
 // @namespace    jeffmccune
-// @version      1.0.0
+// @version      0.1.0
+// @updateUrl    https://github.com/jeffmccune/web-userscripts/raw/master/personal_capital_classifications.user.js
+// @downloadUrl  https://github.com/jeffmccune/web-userscripts/raw/master/personal_capital_classifications.user.js
 // @description  Dump allocations in tab delimited lines to paste into sheets
 // @author       Jeff McCune
 // @match        https://home.personalcapital.com/*
