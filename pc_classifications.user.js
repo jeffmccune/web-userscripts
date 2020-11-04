@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Personal Capital Holding Classifications
 // @namespace    jeffmccune
-// @version      1.0.0
+// @version      1.0.1
 // @updateUrl    https://github.com/jeffmccune/web-userscripts/raw/master/pc_classifications.user.js
 // @downloadUrl  https://github.com/jeffmccune/web-userscripts/raw/master/pc_classifications.user.js
 // @description  Download holding classification data
@@ -129,9 +129,7 @@
 
 
   function processHoldings(response) {
-    // The SPA calls getHoldings twice for some reason, we only need the data once.
-    if (processed) return;
-    processed = true;
+    // Always take the most recent call so we grab the data that's presented on screen.
     holdings = JSON.parse(response);
   }
 
